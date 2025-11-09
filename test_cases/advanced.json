@@ -1,0 +1,40 @@
+{
+  "description": "Advanced test case: Complex scenario with missing values, many duplicates, and formatting variations",
+  "table_items": [
+    {"id": 1, "row": 0, "column": 0, "amount_text": "100.00"},
+    {"id": 2, "row": 0, "column": 1, "amount_text": "100.00"},
+    {"id": 3, "row": 0, "column": 2, "amount_text": "100.00"},
+    {"id": 4, "row": 1, "column": 0, "amount_text": "(500.00)"},
+    {"id": 5, "row": 1, "column": 1, "amount_text": ""},
+    {"id": 6, "row": 1, "column": 2, "amount_text": "-250.00"},
+    {"id": 7, "row": 2, "column": 0, "amount_text": "1,234.56"},
+    {"id": 8, "row": 2, "column": 1, "amount_text": "100.00"},
+    {"id": 9, "row": 2, "column": 2, "amount_text": "(500.00)"},
+    {"id": 10, "row": 3, "column": 0, "amount_text": "100.00"},
+    {"id": 11, "row": 3, "column": 1, "amount_text": "7,890.12"},
+    {"id": 12, "row": 3, "column": 2, "amount_text": "999.99"},
+    {"id": 13, "row": 4, "column": 0, "amount_text": "(500.00)"},
+    {"id": 14, "row": 4, "column": 1, "amount_text": "100.00"},
+    {"id": 15, "row": 4, "column": 2, "amount_text": "100.00"}
+  ],
+  "ocr_lines": [
+    {"id": 301, "text": "$100.00", "h_min": 50.0, "h_max": 65.0, "w_min": 50.0, "w_max": 110.0},
+    {"id": 302, "text": "100.00", "h_min": 50.0, "h_max": 65.0, "w_min": 200.0, "w_max": 260.0},
+    {"id": 303, "text": "$ 100", "h_min": 50.0, "h_max": 65.0, "w_min": 350.0, "w_max": 400.0},
+    {"id": 304, "text": "(500.00)", "h_min": 100.0, "h_max": 115.0, "w_min": 50.0, "w_max": 120.0},
+    {"id": 305, "text": "-250.00", "h_min": 100.0, "h_max": 115.0, "w_min": 350.0, "w_max": 420.0},
+    {"id": 306, "text": "$1,234.56", "h_min": 150.0, "h_max": 165.0, "w_min": 50.0, "w_max": 130.0},
+    {"id": 307, "text": "100.00", "h_min": 150.0, "h_max": 165.0, "w_min": 200.0, "w_max": 260.0},
+    {"id": 308, "text": "(500)", "h_min": 150.0, "h_max": 165.0, "w_min": 350.0, "w_max": 400.0},
+    {"id": 309, "text": "100", "h_min": 200.0, "h_max": 215.0, "w_min": 50.0, "w_max": 90.0},
+    {"id": 310, "text": "$7,890.12", "h_min": 200.0, "h_max": 215.0, "w_min": 200.0, "w_max": 280.0},
+    {"id": 311, "text": "999.99", "h_min": 200.0, "h_max": 215.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 312, "text": "(500.00)", "h_min": 250.0, "h_max": 265.0, "w_min": 50.0, "w_max": 120.0},
+    {"id": 313, "text": "$100.00", "h_min": 250.0, "h_max": 265.0, "w_min": 200.0, "w_max": 260.0},
+    {"id": 314, "text": "100.00", "h_min": 250.0, "h_max": 265.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 390, "text": "Extra Line", "h_min": 300.0, "h_max": 315.0, "w_min": 50.0, "w_max": 150.0},
+    {"id": 391, "text": "Not in table", "h_min": 350.0, "h_max": 365.0, "w_min": 50.0, "w_max": 180.0}
+  ],
+  "expected_success_rate": 93.3,
+  "notes": "Challenging case: '100.00' appears 6 times in table and multiple times in OCR with different formatting. '(500.00)' appears 3 times. One empty cell (item 5). Extra OCR lines not in table (390, 391). Tests normalization of various formats: '$ 100', '(500)', '-250.00'."
+}

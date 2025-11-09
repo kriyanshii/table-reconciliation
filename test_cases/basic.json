@@ -1,0 +1,27 @@
+{
+  "description": "Basic test case: 3x3 table with all unique values",
+  "table_items": [
+    {"id": 1, "row": 0, "column": 0, "amount_text": "100.00"},
+    {"id": 2, "row": 0, "column": 1, "amount_text": "200.00"},
+    {"id": 3, "row": 0, "column": 2, "amount_text": "300.00"},
+    {"id": 4, "row": 1, "column": 0, "amount_text": "150.00"},
+    {"id": 5, "row": 1, "column": 1, "amount_text": "250.00"},
+    {"id": 6, "row": 1, "column": 2, "amount_text": "350.00"},
+    {"id": 7, "row": 2, "column": 0, "amount_text": "175.00"},
+    {"id": 8, "row": 2, "column": 1, "amount_text": "275.00"},
+    {"id": 9, "row": 2, "column": 2, "amount_text": "375.00"}
+  ],
+  "ocr_lines": [
+    {"id": 101, "text": "$100.00", "h_min": 100.0, "h_max": 115.0, "w_min": 50.0, "w_max": 110.0},
+    {"id": 102, "text": "$200.00", "h_min": 100.0, "h_max": 115.0, "w_min": 200.0, "w_max": 260.0},
+    {"id": 103, "text": "$300.00", "h_min": 100.0, "h_max": 115.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 104, "text": "150.00", "h_min": 150.0, "h_max": 165.0, "w_min": 50.0, "w_max": 110.0},
+    {"id": 105, "text": "250.00", "h_min": 150.0, "h_max": 165.0, "w_min": 200.0, "w_max": 260.0},
+    {"id": 106, "text": "350.00", "h_min": 150.0, "h_max": 165.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 107, "text": "175.00", "h_min": 200.0, "h_max": 215.0, "w_min": 50.0, "w_max": 110.0},
+    {"id": 108, "text": "275.00", "h_min": 200.0, "h_max": 215.0, "w_min": 200.0, "w_max": 260.0},
+    {"id": 109, "text": "375.00", "h_min": 200.0, "h_max": 215.0, "w_min": 350.0, "w_max": 410.0}
+  ],
+  "expected_success_rate": 100.0,
+  "notes": "All values are unique. Positional matching should work perfectly."
+}

@@ -1,0 +1,33 @@
+{
+  "description": "Intermediate test case: Table with duplicate values requiring position-based disambiguation",
+  "table_items": [
+    {"id": 1, "row": 0, "column": 0, "amount_text": "1,000.00"},
+    {"id": 2, "row": 0, "column": 1, "amount_text": "2,000.00"},
+    {"id": 3, "row": 0, "column": 2, "amount_text": "500.00"},
+    {"id": 4, "row": 1, "column": 0, "amount_text": "1,000.00"},
+    {"id": 5, "row": 1, "column": 1, "amount_text": "3,000.00"},
+    {"id": 6, "row": 1, "column": 2, "amount_text": "500.00"},
+    {"id": 7, "row": 2, "column": 0, "amount_text": "1,500.00"},
+    {"id": 8, "row": 2, "column": 1, "amount_text": "3,500.00"},
+    {"id": 9, "row": 2, "column": 2, "amount_text": "750.00"},
+    {"id": 10, "row": 3, "column": 0, "amount_text": "2,500.00"},
+    {"id": 11, "row": 3, "column": 1, "amount_text": "4,000.00"},
+    {"id": 12, "row": 3, "column": 2, "amount_text": "1,250.00"}
+  ],
+  "ocr_lines": [
+    {"id": 201, "text": "1,000.00", "h_min": 50.0, "h_max": 65.0, "w_min": 50.0, "w_max": 120.0},
+    {"id": 202, "text": "$2,000.00", "h_min": 50.0, "h_max": 65.0, "w_min": 200.0, "w_max": 280.0},
+    {"id": 203, "text": "500.00", "h_min": 50.0, "h_max": 65.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 204, "text": "1,000.00", "h_min": 100.0, "h_max": 115.0, "w_min": 50.0, "w_max": 120.0},
+    {"id": 205, "text": "$3,000.00", "h_min": 100.0, "h_max": 115.0, "w_min": 200.0, "w_max": 280.0},
+    {"id": 206, "text": "500.00", "h_min": 100.0, "h_max": 115.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 207, "text": "1,500.00", "h_min": 150.0, "h_max": 165.0, "w_min": 50.0, "w_max": 120.0},
+    {"id": 208, "text": "3,500.00", "h_min": 150.0, "h_max": 165.0, "w_min": 200.0, "w_max": 280.0},
+    {"id": 209, "text": "750.00", "h_min": 150.0, "h_max": 165.0, "w_min": 350.0, "w_max": 410.0},
+    {"id": 210, "text": "2,500.00", "h_min": 200.0, "h_max": 215.0, "w_min": 50.0, "w_max": 120.0},
+    {"id": 211, "text": "4,000.00", "h_min": 200.0, "h_max": 215.0, "w_min": 200.0, "w_max": 280.0},
+    {"id": 212, "text": "(1,250.00)", "h_min": 200.0, "h_max": 215.0, "w_min": 350.0, "w_max": 420.0}
+  ],
+  "expected_success_rate": 100.0,
+  "notes": "Contains duplicates: '1,000.00' appears twice, '500.00' appears twice. Position-based matching is essential to correctly match the duplicates."
+}
