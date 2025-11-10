@@ -195,6 +195,7 @@ Submit:
    - Why you chose this approach
    - Any assumptions you made
    - Trade-offs and what you would improve with more time
+   - See `SOLUTION_README.md` for the authored solution details.
 
 ## Evaluation Criteria
 

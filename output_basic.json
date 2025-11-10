@@ -1,0 +1,46 @@
+{
+  "matches": [
+    {
+      "table_item_id": 1,
+      "ocr_line_id": 101
+    },
+    {
+      "table_item_id": 2,
+      "ocr_line_id": 102
+    },
+    {
+      "table_item_id": 3,
+      "ocr_line_id": 103
+    },
+    {
+      "table_item_id": 4,
+      "ocr_line_id": 104
+    },
+    {
+      "table_item_id": 5,
+      "ocr_line_id": 105
+    },
+    {
+      "table_item_id": 6,
+      "ocr_line_id": 106
+    },
+    {
+      "table_item_id": 7,
+      "ocr_line_id": 107
+    },
+    {
+      "table_item_id": 8,
+      "ocr_line_id": 108
+    },
+    {
+      "table_item_id": 9,
+      "ocr_line_id": 109
+    }
+  ],
+  "stats": {
+    "total_items": 9,
+    "matched_items": 9,
+    "unmatched_items": 0,
+    "success_rate": 100.0
+  }
+}
